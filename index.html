@@ -1,101 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-     <!--Google font-->
-     <link
-     href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap"
-     rel="stylesheet"
-   />
-      <title>Dashboard</title>
-   </head>
-<body>
-    <div class="container">
- <div class="navigation">
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-apple"></i></span>
-                <span class="title">Brand name</span>
-             </a>
-            
-         </li>
-     </ul> 
-    <img class="profile" src="images/kadi (8).jpeg" alt="kadi profile">
-        <h5 class="heading-5">Khadijah Saeed</h5>
-      <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-home"></i></span>
-                <span class="title">Dashboard</span>
-             </a>
-            
-         </li>
-     </ul>
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-user"></i></span>
-                <span class="title">Customers Name</span>
-             </a>
-             
-         </li>
-     </ul>
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-commenting-o"></i></span>
-                <span class="title">Message</span>
-             </a>
-            
-         </li>
-     </ul>
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-question-circle"></i></span>
-                <span class="title">Help</span>
-             </a>
-             
-         </li>
-     </ul>
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-cogs"></i></span>
-                <span class="title">Settings</span>
-             </a>
-             
-         </li>
-     </ul>
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-unlock"></i></span>
-                <span class="title">Password</span>
-             </a>
-             
-         </li>
-     </ul>
-     <ul>
-         <li>
-             <a href="#">
-                <span class="icon"><i class="fa fa-sign-out"></i></span>
-                <span class="title">Sign Out</span>
-             </a>
-             
-         </li>
-     </ul>
- </div>
-    </div>
-    <!--Title-->
-    <section id="title">
- <div class="heading">Welcome Khadijah! </div>
-    </section>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet" />
     <!--Font Awesome-->
     <script src="https://use.fontawesome.com/5dcec97246.js"></script>
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div>
+        <!-- Sidebar -->
+        <div id="nav" class="nav-container d-flex">
+            <div class="nav-content d-flex">
+                <div class="sidebar-title">
+                    <div id="brand-name" class="text-center mb-4">
+                        <i class="fa fa-apple"></i>
+                        M#K
+                    </div>
+
+                    <a href="#">
+                        <img class="profile" src="images/kadi (8).jpeg" alt="kadi profile" />
+                        <div class="name">Khadijah Saeed</div>
+                    </a>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            <span class="title">Customers Name</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-commenting-o"></i>
+                            <span class="title">Message</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-question-circle"></i>
+                            <span class="title">Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cogs"></i>
+                            <span class="title">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-unlock"></i>
+                            <span class="title">Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i>
+                            <span class="title">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main>
+            <div class="container-fluid">
+                <div class="title">
+                    <h1>Welcome to M & K's Super Market😊😉</h1>
+                </div>
+
+                <!-- cards 1 -->
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card-1">
+                            <div class="card-body text-center">
+                                <i class="fa fa-dollar icon"></i>
+                                <div>Earnings</div>
+                                <div class="card-number icon">$ 123</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-1">
+                            <div class="card-body text-center">
+                                <i class="fa fa-shopping-cart icon"></i>
+                                <div>Orders</div>
+                                <div class="card-number icon">16</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-1">
+                            <div class="card-body text-center">
+                                <i class="fa fa-server icon"></i>
+                                <div>Session</div>
+                                <div class="card-number icon">463</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-1">
+                            <div class="card-body text-center">
+                                <i class="fa fa-user-circle-o icon"></i>
+                                <div>Users</div>
+                                <div class="card-number icon">17</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-1">
+                            <div class="card-body text-center">
+                                <i class="fa fa-undo icon"></i>
+                                <div>Returns</div>
+                                <div class="card-number icon">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card-1">
+                            <div class="card-body text-center">
+                                <i class="fa fa-comment icon"></i>
+                                <div>Comment</div>
+                                <div class="card-number icon">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cards 2 -->
+                <div class="row">
+                    <div id="reports" class="col-md-6">
+                        <div class="title-2">
+                            <h5>Recent Orders</h5>
+                        </div>
+
+                        <div id="orders">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#54129</div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#54128</div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#54127</div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#54126</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#1234</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#1234</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#1234</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#1234</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>order#1234</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cards 3 -->
+                <div class="title-2">
+                    <h5>Top Selling Items</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="orders">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <img class="card-img sw-11"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExJVbuoCUnJ_wDIUT56JGrEEJQJCzclaZLA&usqp=CAU"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <img class="card-img sw-11"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5iPxhCOXAHu62MHmXYcwmejDT2aduUybsw&usqp=CAU"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <img class="card-img sw-11"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8zYqLmoioIEj-RnpefhYlrX4X3bL_ysYbA&usqp=CAU"
+                                            alt="">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <img class="card-img sw-11"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8DERtmr84McsRNf_opj2P8KLaQBhohYaLQ&usqp=CAU"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <img class="card-img sw-11"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyMnp6SXFVkblW1cUerRgZIA9wEhavR6zqfw&usqp=CAU"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cards 4 -->
+                    <div class="col-6">
+                        <div id="orders">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td>Whole wheat bread</td>
+                                                <td>789</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td> White bread</td>
+                                                <td>753</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sourdough bread</td>
+                                                <td> 721</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Melonpan bread</td>
+                                                <td>693</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gluten free bread</td>
+                                                <td>431</td>
+                                            </tr>
+                                            <tr>
+                                                <td>sliced whole wheat bread</td>
+                                                <td>381</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Packaged Zopf bread</td>
+                                                <td>310</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Barm cake</td>
+                                                <td>301</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pita bread</td>
+                                                <td>288</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Drinks</td>
+                                                <td>288</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Milkshake</td>
+                                                <td>288</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cuppicino</td>
+                                                <td>288</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h5 class="title-2">Activity</h5>
+                        <div id="orders">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table>
+                                        <tr>
+                                            <td> New user registiration</td>
+                                            <td>18 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 new product added</td>
+                                            <td>18 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Product out of stock: Breadstick</td>
+                                            <td>16 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Category page returned an error</td>
+                                            <td>15 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14 products added</td>
+                                            <td>15 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>New sale: Steirer Brot</td>
+                                            <td>15 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>New sale: Soda Bread</td>
+                                            <td>15 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Recived a support ticket</td>
+                                            <td>14 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>New sale: Cholermüs</td>
+                                            <td>13 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>New sale: Bazlama</td>
+                                            <td>13 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Recived a comment</td>
+                                            <td>13 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Recived an email</td>
+                                            <td>13 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>New sale: Bazlama</td>
+                                            <td>12 Dec</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Recived a commen</td>
+                                            <td>11 Dec</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="title-2">Recents Reviews</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img class="card-img sw-11"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExJVbuoCUnJ_wDIUT56JGrEEJQJCzclaZLA&usqp=CAU"
+                                        alt="">
+
+                                </a>
+                                <table id="reviews">
+                                    <tr>
+                                        <td>Magdalene</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                                <div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img class="card-img sw-11"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyMnp6SXFVkblW1cUerRgZIA9wEhavR6zqfw&usqp=CAU"
+                                        alt="">
+
+                                </a>
+                                <table id="reviews">
+                                    <tr>
+                                        <td>Darlington</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                                <div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="title-2">Tips</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>More Sales?</h3>
+                                <h4>Add New Products!</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet reiciendis
+                                    optio non ex autem.</p>
+                                <button type="button" class="btn btn-outline-dark">+ Add Products</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <footer>
+                </footer>
+        </main>
+    </div>
 </body>
+
 </html>
